@@ -11,14 +11,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/781c5d4f51.js" crossorigin="anonymous"></script>
     <title>Matthew's portfolio</title>
 </head>
 <body>
     <!--Nav bar-->
-    <header id="myHeader">
+    <header>
     <nav id="header-nav" class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#my-footer"><i class="fa fa-comment small-fa" aria-hidden="true"></i><span>Contact</span></a>
+        <a class="navbar-brand header-button" href="#my-footer"><i class="fa fa-comment small-fa" aria-hidden="true"></i><span>Contact</span></a>
 
         <!--social icons for small size-->
         <div class="contact-info d-lg-none">
@@ -28,7 +28,7 @@
         </div>
         
         <!--small size collapse button-->
-        <button class="navbar-toggler custom_navbar" type="button" data-bs-toggle="collapse" data-bs-target="#collapsable-nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler custom-navbar" type="button" data-bs-toggle="collapse" data-bs-target="#collapsable-nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -36,14 +36,13 @@
         <div class="collapse navbar-collapse" id="collapsable-nav">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#about-me"><p>About me</p></a>
+              <a class="nav-link header-button" href="#about-me"><p>About me</p></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#work"><p>Work</p></a>
+              <a class="nav-link header-button" href="#work"><p>Work</p></a>
             </li>
-
             <li class="nav-item">
-              <a class="nav-link" href="#skills"><p>Skills</p></a>
+              <a class="nav-link header-button" href="#skills"><p>Skills</p></a>
             </li>
           </ul>
         </div>
@@ -61,26 +60,43 @@
     <div id="main-content">
    
     
-    <section id="about-me" class="container  p-5">
+    <section id="about-me" class="p-5">
+      <div class="container">
       <h1>Hi, I am Matthew Yeung</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin maximus felis, non laoreet sapien porttitor nec. Etiam tristique cursus neque vitae scelerisque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rhoncus ex at lobortis imperdiet. Donec imperdiet mollis quam a mollis. Fusce et lacus id eros pulvinar faucibus at et mauris.
 
         Suspendisse quam augue, commodo non posuere vel, porttitor et eros. Curabitur venenatis dictum faucibus. Etiam egestas at leo a posuere. Etiam malesuada egestas sapien, nec tempor magna ornare eget. Nam eget enim pharetra, commodo neque rhoncus, pulvinar lorem. Aenean mattis tincidunt sem, id semper metus faucibus vel. Nulla luctus arcu sit amet elit facilisis tincidunt ac at massa. Nulla sed tincidunt ligula.</p>
       <button type="button" class="btn btn-outline-primary btn-lg"><a href="#my-footer">Contact me</a></button>
       <button type="button" id ="resume-button" class="btn btn-outline-primary btn-lg" ><a href="resume.pdf" target="_blank">Download Resume</a></button>
-      
+      </div>
     </section>
 
     <section id="work" class=" p-5">
       <h2>My personal projects</h2>
       <div class="container">
       <div class="row">
-      <section class="col-sm-4">1</section>
-      <section class="col-sm-4">2</section>
-      <section class="col-sm-4">3</section>
-      <section class="col-sm-4">4</section>
-      <section class="col-sm-4">5</section>
-      <section class="col-sm-4">6</section>
+      <!--project 1-->
+      <section class="col-lg-4 ">
+        <a href="https://github.com/matthewyeung35/portfolio-site" target="_blank"><div id="project1" class="project-image">
+          <i class="fa fa-github-square" aria-hidden="true"></i>
+        </div></a>
+        <div class="project-info"><h3>Portfolio Website</h3><div>The site you are visiting!<br>
+        <i class="fa-brands fa-html5"></i>  
+        <i class="fa-brands fa-css3-alt"></i>
+        <i class="fa-brands fa-js"></i></div></div>
+      </section>
+      <!--project 2-->
+      <section class="col-lg-4 ">
+        <a href="https://github.com/matthewyeung35/Appraisal-automation" target="_blank"><div id="project2" class="project-image">
+          <i class="fa fa-github-square" aria-hidden="true"></i>
+        </div></a>
+        <div class="project-info"><h3>Office Automation Program</h3><div>A python project I made for a previous office work. Input information into an excel sheet and it will fill up a pdf form, increasing my work effeciency.<br>
+        <i class="fa-brands fa-python"></i>  
+      </section>
+      <section class="col-lg-4">3</section>
+      <section class="col-lg-4">4</section>
+      <section class="col-lg-4">5</section>
+      <section class="col-lg-4">6</section>
       </div></div>
     </section>
 

@@ -7,66 +7,70 @@ body{
     font-family: 'Josefin Sans', sans-serif;
 
 }
-
+a{
+    text-decoration:none;
+}
 /*header*/
-
-
 header{
     position: sticky;
     top: 0px;
+    z-index: 1;
+}
+.header-button:hover{
+    background-color: rgb(88, 88, 88);
+}
+.header-button{
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 #header-nav{
     background-color: rgb(48, 58, 58);
-    border-radius: 0;
     border:0;
-
+    padding:0;
 }
-
-#collapsable-nav{
-    float: right;
+.navbar-nav{
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
-
 .fa-comment{
     color: rgb(20, 119, 211);
-    margin-left: 10px;
+    margin-left: 15px;
 }
-
 header span{
     color: rgb(20, 119, 211);
     margin-top: 15px;
     font-size: 25px;
     margin-left: 5px;
+    margin-right: 10px;
 }
-
 header ul{
     margin: auto;
     width: 50%;
     padding: 10px;
 }
-
 header p{
     color: rgb(255, 255, 255);
-    margin: 5px 35px 5px 35px;
+    margin: 0px 35px 5px 35px;
     text-align: center;
     font-size: 20px;
 }
-
-
 .contact-info i{
     font-size: 50px;
     margin:  0px 20px 0px 10px;
 }
-
 .custom_navbar{
     margin-right: 18px;
 }
+
 /*Jumbotron*/
 #main-content{
     min-height: 100vh;
 }
 /*About me */
 #about-me{
-    scroll-margin-top: 4em;
+    scroll-margin-top: 5em;
+    background: url('../img/background2.jpg') no-repeat;
+    background-size:cover;
 }
 #about-me h1{
     color: black;
@@ -104,6 +108,50 @@ header p{
 #work h2{
     text-align: center;
 }
+#work i{
+    font-size: 35px;
+    margin: 10px 10px 0px 10px;
+}
+.project-image{
+    border: 1px solid rgb(20, 119, 211);
+    border-radius: 25px;
+    height: 300px;
+    margin-top: 30px;
+
+}
+.project-image:hover{
+    opacity: 0.5;
+    
+}
+.project-image i{
+    display: none;
+    text-align: center;
+    padding: 120px;
+}
+.project-image:hover i{
+    display: block;
+}
+
+.project-info{
+    margin-top: 10px;
+}
+
+.project-info h3{
+    text-align: center;
+    font-size: 24px;
+}
+.project-info div{
+    text-align: center;
+    font-size: 16px;
+}
+#project1{
+    background: url('../img/project1.JPG') no-repeat;
+    background-size:cover;
+}
+#project2{
+    background: url('../img/project2.JPG') no-repeat;
+    background-size:cover;
+}
 
 /*skills*/
 #skills{
@@ -115,7 +163,6 @@ header p{
 }
 /*Footer*/
 #my-footer{
-
     bottom:0;
     width:100%;
     background-color: rgb(48, 58, 58);
@@ -127,15 +174,12 @@ header p{
     padding-bottom: 20px;
     text-align: center;
 }
-
 #credit-container a{
-    text-decoration: none;
     color: #fff;
     font-size: 20px;
 }
 #my-footer a:hover{
     background-color: rgb(76, 76, 80);
-
 }
 #credit{
     bottom: 10px;
@@ -144,10 +188,16 @@ header p{
     width: 100%;
 }
 
+/*small size*/
+@media(max-width:992px){
+    .personal-project{
+        height: 400px;
+    }
+}
 /*mobile size*/
 @media(max-width:576px){
-    .d-lg-none i{
-        font-size: 25px;
+    .contact-info i{
+        font-size: 24px;
         margin: 0px 10px 0px 10px;
         float: left;
     }
