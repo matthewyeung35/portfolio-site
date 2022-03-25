@@ -156,8 +156,14 @@ header p{
 /*skills*/
 #skills{
     scroll-margin-top: 4em;
+    background: url('../img/background1.jpg') no-repeat;
+    background-size:cover;
 }
 #skills h2{
+    color: black;
+    text-align: center;
+}
+#skills span{
     color: black;
     text-align: center;
 }
