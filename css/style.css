@@ -7,9 +7,6 @@ body{
     font-family: 'Josefin Sans', sans-serif;
 
 }
-a{
-    text-decoration:none;
-}
 /*header*/
 header{
     position: sticky;
@@ -112,6 +109,9 @@ header p{
     font-size: 35px;
     margin: 10px 10px 0px 10px;
 }
+#work a{
+    text-decoration:none;
+}
 .project-image{
     border: 1px solid rgb(20, 119, 211);
     border-radius: 25px;
@@ -163,10 +163,51 @@ header p{
     color: black;
     text-align: center;
 }
-#skills span{
-    color: black;
+#skill-block{
     text-align: center;
+    margin-top: 15px;
 }
+
+.skill-bar {
+    position: relative;
+    background-color: rgb(161, 160, 160);
+    border-radius: 1.25em;
+    width: 400px;
+    height: 24px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.skill-value {
+    position: absolute;
+    left: 0px;
+    border-radius: 1.25em;
+    height: 24px;
+    display: inline-block;
+
+}
+#skill1{
+    background-color: rgba(0, 81, 255, 0.61);
+    width: 80%;
+}
+#skill2{
+    background-color: orange;
+    width: 50%;
+}
+#skill3{
+    background-color: rgba(0, 81, 255, 0.849);
+    width: 10%;
+}
+#skill4{
+    background-color: rgba(0, 81, 255, 0.61);
+    width: 40%;
+}
+.skill-name{
+    position: relative;
+    bottom:20px;
+    color: rgb(0, 0, 0);
+    margin-left: 15px;
+}
+
 /*Footer*/
 #my-footer{
     bottom:0;
@@ -179,6 +220,9 @@ header p{
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
+}
+#my-footer a{
+    text-decoration: none;
 }
 #credit-container a{
     color: #fff;
