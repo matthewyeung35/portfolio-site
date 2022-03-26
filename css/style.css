@@ -255,5 +255,14 @@ header p{
         margin: 0px 10px 0px 10px;
         float: left;
     }
+    /*skills*/
+    .skill-bar {
+        width: 200px;
+    }
+
+    .skill-name{
+        left: 150px;
+    }
+
 
 }
