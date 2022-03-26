@@ -195,17 +195,21 @@ header p{
 }
 #skill3{
     background-color: rgba(0, 81, 255, 0.849);
-    width: 10%;
+    width: 50%;
 }
 #skill4{
-    background-color: rgba(0, 81, 255, 0.61);
+    background-color: rgba(206, 202, 7, 0.952);
     width: 40%;
 }
 .skill-name{
     position: relative;
-    bottom:20px;
+    top: 3px;
+    left: 250px;
     color: rgb(0, 0, 0);
-    margin-left: 15px;
+}
+.skill-name i{
+    margin-left: 5px;
+    font-size:larger;
 }
 
 /*Footer*/
