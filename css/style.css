@@ -152,6 +152,18 @@ header p{
     background: url('../img/project2.JPG') no-repeat;
     background-size:cover;
 }
+#project3{
+    background: url('../img/project3.JPG') no-repeat;
+    background-size:cover;
+}
+#tutorial1{
+    background: url('../img/tutorial1.JPG') no-repeat;
+    background-size:cover;
+}
+#tutorial2{
+    background: url('../img/tutorial2.JPG') no-repeat;
+    background-size:cover;
+}
 
 /*skills*/
 #skills{
@@ -191,15 +203,19 @@ header p{
 }
 #skill2{
     background-color: orange;
-    width: 50%;
+    width: 60%;
 }
 #skill3{
     background-color: rgba(0, 81, 255, 0.849);
-    width: 50%;
+    width: 60%;
 }
 #skill4{
     background-color: rgba(206, 202, 7, 0.952);
-    width: 40%;
+    width: 45%;
+}
+#skill5{
+    background-color: rgba(97, 128, 179, 0.952);
+    width: 70%;
 }
 .skill-name{
     position: relative;
@@ -232,20 +248,24 @@ header p{
     color: #fff;
     font-size: 20px;
 }
+#credit-container section{
+    overflow-wrap: break-word;
+}
 #my-footer a:hover{
     background-color: rgb(76, 76, 80);
 }
 #credit{
     bottom: 10px;
     margin-top: 30px;
+    padding-bottom: 10px;
     text-align: center;
     width: 100%;
 }
 
 /*small size*/
 @media(max-width:992px){
-    .personal-project{
-        height: 400px;
+    .project-image{
+        height: 500px;
     }
 }
 /*mobile size*/
@@ -259,10 +279,7 @@ header p{
     .skill-bar {
         width: 200px;
     }
-
     .skill-name{
         left: 150px;
     }
-
-
 }
